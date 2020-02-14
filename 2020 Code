@@ -1,0 +1,18 @@
+#include <kipr/wombat.h>
+
+int main()
+{
+    printf("Hello World\n");
+    if(analog(0) <= 3000)
+    {
+        motor(0, 50);
+        motor(3, 25);
+    }
+    else
+    {
+        motor(0,25);
+        motor(3,50);
+    }
+    ao();
+    return 0;
+}
