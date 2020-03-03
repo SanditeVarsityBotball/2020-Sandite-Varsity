@@ -1,0 +1,19 @@
+    motor (0,100);
+    motor (3,100); // goes forward to be able to turn again
+    msleep (500);
+    
+    motor (0,50);
+    motor (3,100); // turn to head toward  blocks
+    msleep (3000);       
+    
+    motor (0,100);
+    motor (3,100); //forward to get near the blocks
+    msleep (800);
+    
+	motor (0,100);
+    motor (3,25); // turn to grab blocks
+    msleep (5000);
+
+    motor (0,100);
+    motor (3,100); // goes in the box
+    msleep (200);
